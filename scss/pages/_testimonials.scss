@@ -1,0 +1,14 @@
+/* Testimonials --------------------- */
+#archive-testimonials {
+	.big-quote-wrap {
+		@media( max-width: 544px ) {
+			display: block;
+		}
+	}
+	.quote-footer {
+		margin-top: 0;
+		h6 {
+			color: $black;
+		}
+	}
+}

@@ -1,0 +1,154 @@
+/* Generic pages ------------ */
+#standard-page,
+#sitemap,
+#blog,
+#category,
+#archive,
+#box-404,
+#archive-testimonials,
+#author,
+#search-page,
+#archive-faqs {
+	padding-bottom: 300px;
+}
+#legal-service-section-three {
+	padding-bottom: 270px;
+}
+#index {
+	padding-bottom: 50px;
+}
+.page-legal-services #index {
+	padding-bottom: 14px;
+	@media( max-width: 544px ) {
+		padding-bottom: 72px;
+	}
+}
+.wpseo-fax,
+.wpseo-phone,
+.country-name {
+	display: none;
+}
+.inner-wrapper {
+	.content,
+	.box-1-wrap {
+		padding-right: 40px;
+		@media( max-width: 991px ) {
+			padding-right: 15px;
+		}
+		ul li {
+			padding-bottom: 10px;
+			text-indent: -19px;
+			padding-left: 25px;
+			text-transform: none;
+			font-family: $din-regular;
+			&:before {
+				padding-right: 10px;
+				content: "\2022";
+				color: $headline-red;
+			}
+			ul.children {
+				margin-left: 20px;
+				padding-top: 10px;
+			}
+			ul {
+				margin-bottom: 20px;
+				margin-top: 20px;
+			}
+			a {
+				color: $btn-brown;
+				&:hover {
+					color: $headline-red;
+				}
+			}
+		}
+		.ssbp-wrap {
+			ul li {
+				&:before {
+					padding-right: 0;
+					vertical-align: 0;
+					content: none;
+				}
+				a {
+					color: $white;
+				}
+			}
+		}
+		.ssbp-list {
+			li {
+				padding-left: 0;
+			}
+		}
+		.ssbp-btn:before {
+			@media( max-width: 458px ) {
+				padding-left: 48px;
+			}
+		}
+	}
+	p {
+		margin-bottom: 35px;
+		font-family: $geo-light;
+		font-size: 17px;
+		line-height: 28px;
+	}
+	a {
+		&:hover {
+			color: $headline-red;
+		}
+	}
+	.content h2 {
+		color: #000;
+	}
+}
+
+/* FAQs -------------------- */
+.faq-title {
+	margin-bottom: 10px;
+	a {
+		color: #000;
+		font-family: $geo-light;
+		font-size: 18px;
+		cursor: pointer;
+	}
+}
+
+/* Big quote --------------- */
+#big-quote {
+	padding-bottom: 230px;
+	@media( max-width: 544px ) {
+		padding-bottom: 180px;
+	}
+}
+.big-quote-wrap {
+	@media( max-width: 544px ) {
+		display: none;
+	}
+}
+.quote-icon {
+	margin-top: 55px;
+	text-align: right;
+	@media( max-width: 991px ) {
+		display: none;
+	}
+}
+.pa-quote {
+	margin-top: 50px;
+	text-align: right;
+	float: right;
+	q {
+		font-family: $geo-light;
+		font-size: 18px;
+		line-height: 25px;
+	}
+	h6 {
+		color: $black;
+	}
+}
+.quote-footer {
+	margin-top: 46px;
+	blockquote footer {
+		color: #000;
+		font-family: $din-medium;
+		font-size: 13px;
+		text-transform: uppercase;
+	}
+}

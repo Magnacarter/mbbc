@@ -1,0 +1,30 @@
+/* Attorneys -------------- */
+.page-our-attorneys {
+	@media (min-width: 1200px) {
+		.attorney-slide.col-lg-2 {
+		    width: 20%;
+		}
+	}
+	.grey-background {
+		margin-bottom: 0;
+	}
+	.top-attorneys,
+	.bottom-attorneys {
+		min-height: 358px;
+	}
+}
+
+.page-template-archive-attorney {
+	.grey-background {
+		.custom-arrows {
+			display: none;
+		}
+	}
+}
+
+/* Single attorney ------------- */
+.single-attorney {
+	.grey-background {
+		margin-bottom: 0;
+	}
+}

@@ -1,0 +1,169 @@
+/* Blog ------------------- */
+.search-blog-wrap {
+	margin-bottom: 108px;
+	.blog-search-bar {
+		input.search-input  {
+			padding-left: 25px;
+			width: 344px;
+			height: 50px;
+			border: none;
+			background-color: #e3e3e2;
+			vertical-align: 17px;
+			font-family: $geo-light;
+			font-size: 18px;
+			color: #515151;
+			@media( max-width: 438px ) {
+				width: 225px;
+			}
+		}
+		input.search-button {
+			margin-left: -10px;
+			height: 50px;
+			width: 56px;
+			border: none;
+			background-color: $btn-brown;
+			background-image: url( "../images/magnifying-glass.png" );
+			background-repeat: no-repeat;
+			background-position: 50%;
+			vertical-align: top;
+			@-moz-document url-prefix() {
+				vertical-align: 87%;
+			}
+			@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+				vertical-align: 90%;
+			}
+			@supports (-ms-accelerator:true) {
+				vertical-align: -11%;
+			}
+		}
+	}
+	.blog-pagination {
+		margin-top: 13px;
+	}
+}
+.post-excerpt {
+	margin-bottom: 91px;
+}
+.excerpt-title {
+	h2 {
+		a {
+			color: $headline-red;
+		}
+	}
+}
+.author-cat {
+	margin: 12px 0 17px 0;
+	%auth-cat {
+		color: $blog-grey;
+		font-family: $din-regular;
+		font-size: 15px;
+		text-transform: uppercase;
+	}
+	h5 {
+		@extend %auth-cat;
+	}
+	a {
+		@extend %auth-cat;
+		text-decoration: underline !important;
+	}
+}
+.featured-image {
+	@media( max-width: 1199px ) {
+		padding-right: 20px;
+	}
+	@media (min-width: 768px) {
+		width: 37.66667%;
+	}
+	@media( max-width: 767px ) {
+		margin-bottom: 25px;
+	}
+	img {
+		height: 291px;
+		width: 261px;
+		box-shadow: 3px 3px 3px rgba( 0,0,0, 0.2 );
+		@media( max-width: 1199px ) {
+			width: auto;
+			height: auto;
+		}
+	}
+}
+.post-wrap {
+	p {
+		color: #515151;
+	}
+}
+#blog,
+#category,
+#archive {
+	.content {
+		padding-right: 15px;
+	}
+}
+.blog-read-more-button {
+	margin-top: 45px;
+	@media( max-width: 991px ) {
+		margin-top: 75px;
+	}
+	@media( max-width: 767px ) {
+		margin-top: 45px;
+	}
+}
+.ssbp-wrap {
+	margin-top: 100px;
+}
+
+/* Pagination nav on home.php, single.php, archive.*, author.*, etc...--------- */
+.blog-pagination {
+	text-align: right;	
+}
+.blog-navigation {
+	li a,
+	li a:hover,
+	li.active a,
+	li.disabled {
+		#main & {
+			color: #08204a;
+			text-decoration:none;
+		}
+	}
+
+	ul {
+		#main & {
+			margin: 0;
+		}
+	}
+
+	li {
+		display: inline;
+	}
+}
+
+.blog-navigation {
+	li a,
+	li a:hover,
+	li.active a,
+	li.disabled {
+		cursor: pointer;
+		padding: 4px 5px 2px;
+		font-family: $din-regular;
+		font-size: 16px;
+		color: $white;
+	}
+	a {
+		span {
+			color: #08204a;
+			vertical-align: 9%;
+			&:hover {
+				color: $headline-red;
+			}
+		}
+	}
+}
+
+.blog-navigation {
+	li a:hover,
+	li.active a {
+		background-color: $headline-red;
+		color: $white !important;
+	}
+}

@@ -1,0 +1,60 @@
+/* Forms -----------------------*/
+
+/* Shortcode form ------------- */
+.support-form.shortcode-form {
+	padding: 28px 22px 24px 22px;
+	input {
+		text-align: left !important;
+	}
+	.form-header {
+		text-align: center;
+		h3 {
+			text-transform: uppercase;
+			font-family: $din-regular;
+			color: #fff;
+		}
+	}
+	.name {
+		padding-right: 7.5px;
+	}
+	.required {
+		padding-left: 7.5px;
+	}
+	.form-field-wrap textarea {
+		text-align: left;
+		height: 83px;
+	}
+	.form-button {
+		text-align: center;
+		.form-shortcode-btn {
+			padding: 19px 83px;
+			background-color: $btn-brown;
+			color: $white;
+			font-family: $din-regular;
+			font-size: 18px;
+			text-transform: uppercase;
+			line-height: 0px;
+			&:after {
+				padding-left: 10px;
+				content: url( "../images/form-arrow.png" );
+				vertical-align: -2px;
+			}
+			@extend %hover-black;
+			@media( max-width: 401px ) {
+				padding: 19px 40px;
+			}
+		}
+	}
+}
+
+.contact-us-form {
+	textarea {
+		height: 196px !important;
+	}
+	.form-group.name {
+		padding-right: 0px !important;
+	}
+	.form-group.required {
+		padding-left: 0px;
+	}
+}

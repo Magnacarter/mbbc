@@ -1,0 +1,228 @@
+/* Buttons --------------------*/
+.consultation-btn {
+	@include button-style( $pad: 16px 11px 15px, $font-size: 12px, $bg-color: $black, $color: $white  );
+	line-height: 12px;
+}
+
+.mobile-btn-call {
+	@include button-style( $pad: 13px 10px, $bg-color: $med-grey, $color: #ea1b22 );
+	font-family: $montserrat;
+	@media( max-width: 321px ) {
+		padding: 13px 7px;
+	}
+}
+
+.mobile-btn-directions {
+	@include button-style( $pad: 13px 12px, $bg-color: $med-grey, $color: #ea1b22 );
+	font-family: $montserrat;
+	@media( max-width: 321px ) {
+		padding: 13px 9px;
+	}
+}
+
+.tell-us-btn {
+	@include button-style();
+	@extend %boxshadow;
+	@extend %hover-red;
+	@media( max-width: 341px ) {
+		padding: 13px 10px 9px 10px;
+	}
+}
+
+.blog-read-more-btn {
+	@include button-style();
+	@extend %boxshadow;
+	@extend %hover-red;
+}
+
+.learn-more-btn {
+	@include button-style();
+	@extend %boxshadow;
+	@extend %hover-red;
+}
+
+.meet-team-btn {
+	@include button-style();
+	@extend %boxshadow;
+	@extend %hover-red;
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+		padding: 13px 25px 8px 25px;
+	}
+	@supports (-ms-accelerator:true) {
+		padding: 13px 25px 8px 25px;
+	}
+	@media( max-width: 1199px ) {
+		padding: 13px 23px 13px 23px;
+		font-size: 17px;
+		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+			padding: 13px 23px 8px 23px;
+		}
+		@supports (-ms-accelerator:true) {
+			padding: 13px 23px 8px 23px;
+		}
+	}
+	@media( max-width: 339px ) {
+		padding: 13px 23px 13px 23px;
+		font-size: 15px;
+		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+			padding: 13px 23px 8px 23px;
+		}
+		@supports (-ms-accelerator:true) {
+			padding: 13px 23px 8px 23px;
+		}
+	}
+}
+
+.cta-btn-1 {
+	@include button-style($pad: 13px 75px 9px 75px);
+	@extend %boxshadow;
+	@extend %hover-red;
+	@media( max-width: 1199px ) {
+		padding: 13px 20px 9px 20px;
+		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+			padding: 13px 20px 8px 20px;
+		}
+		@supports (-ms-accelerator:true) {
+			padding: 13px 20px 8px 20px;
+		}
+	}
+	@media( max-width: 991px ) {
+		padding: 13px 89px 9px 89px;
+	}
+	@media( max-width: 355px ) {
+		padding: 13px 68px 9px 68px;
+	}
+}
+
+.cta-btn-2 {
+	@include button-style($pad: 13px 65px 9px 65px);
+	@extend %boxshadow;
+	@extend %hover-red;
+	@media( max-width: 1199px ) {
+		padding: 13px 20px 9px 20px;
+		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+			padding: 13px 20px 8px 20px;
+		}
+		@supports (-ms-accelerator:true) {
+			padding: 13px 20px 8px 20px;
+		}
+	}
+	@media( max-width: 991px ) {
+		padding: 13px 72px 9px 72px;
+	}
+	@media( max-width: 355px ) {
+		padding: 13px 54px 9px 54px;
+	}
+}
+
+.cta-btn-3 {
+	@include button-style($pad: 13px 35px 9px 35px);
+	@extend %boxshadow;
+	@extend %hover-red;
+	@media( max-width: 1199px ) {
+		padding: 13px 20px 9px 20px;
+		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+			padding: 13px 20px 8px 20px;
+		}
+		@supports (-ms-accelerator:true) {
+			padding: 13px 20px 8px 20px;
+		}
+	}
+	@media( max-width: 991px ) {
+		padding: 13px 52px 9px 52px;
+	}
+	@media( max-width: 355px ) {
+		padding: 13px 31px 9px 31px;
+	}
+}
+
+.comm-btn {
+	@include button-style();
+	@extend %boxshadow;
+	@extend %hover-red;
+	@media( max-width: 441px ) {
+		padding: 13px 15px 13px 15px;
+		font-size: 16px;
+	}
+	@media( max-width: 381px ) {
+		padding: 13px 14px 13px 14px;
+		font-size: 15px;
+	}
+	@media( max-width: 351px ) {
+		padding: 13px 14px 13px 14px;
+		font-size: 14px;
+	}
+	@media( max-width: 321px ) {
+		padding: 13px 11px 13px 11px;
+		font-size: 14px;
+	}
+}
+
+.directions-btn {
+	@include button-style();
+	@extend %boxshadow;
+	@extend %hover-red;
+	font-family: $din-regular;
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+		padding: 13px 25px 8px 25px;
+	}
+	@supports (-ms-accelerator:true) {
+		padding: 13px 25px 8px 25px;
+	}
+	@media( max-width: 1225px ) {
+		padding: 13px 12px 13px 12px;
+		font-size: 16px;
+		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+			padding: 13px 12px 8px 12px;
+		}
+		@supports (-ms-accelerator:true) {
+			padding: 13px 12px 8px 12px;
+		}
+	}
+	@media( max-width: 991px ) {
+		font-size: 18px;
+	}
+}
+
+.chat-btn {
+	@include button-style();
+	@extend %boxshadow;
+	@extend %hover-red;
+	font-family: $din-regular;
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+		padding: 13px 25px 8px 25px;
+	}
+	@supports (-ms-accelerator:true) {
+		padding: 13px 25px 8px 25px;
+	}
+	@media( max-width: 1225px ) {
+		padding: 13px 6px 13px 6px;
+		font-size: 16px;
+		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+			padding: 13px 6px 8px 6px;
+		}
+		@supports (-ms-accelerator:true) {
+			padding: 13px 6px 8px 6px;
+		}
+	}
+	@media( max-width: 991px ) {
+		font-size: 18px;
+		padding: 13px 12px 13px 12px;
+		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+			padding: 13px 12px 8px 12px;
+		}
+		@supports (-ms-accelerator:true) {
+			padding: 13px 12px 8px 12px;
+		}
+	}
+}
+
+.read-more-btn {
+	@include button-style();
+	@extend %boxshadow;
+	@extend %hover-red;
+	@media( max-width: 636px ) {
+		padding: 13px 20px 13px 20px;
+		font-size: 15px;
+	}
+}
